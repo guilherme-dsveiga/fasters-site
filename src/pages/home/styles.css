@@ -1,0 +1,76 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.header-wrapper {
+    background-image: url('../../../public/assets/banner-1.png');
+    background-size: cover;
+    background-position: center center;
+    min-height: 80vh;
+}
+
+.line-blue {
+    background: #1C86A4;
+    height: 1px;
+    width: 50px;
+    display: block;
+    margin-top: 10px;
+}
+
+.quotes {
+    inset: auto 5% 5rem auto;
+}
+
+.tailor-bg {
+    background-image: url('../../../public/assets/tailor-bg.png');
+    background-color: #EFF7F9;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+.vert-line {
+    width: 1px;
+    height: 62px;
+    background-color: #949494;
+}
+
+.condition-bg {
+    background-image: url('../../../public/assets/condition-bg.png');
+    background-size: cover;
+    background-position: center center;
+}
+
+.dash {
+    list-style-type: '-';
+}
+
+.testimonials-bg {
+    background-image: url('../../../public/assets/depoimentos.png');
+    background-size: cover;
+    background-position: center center;
+    min-height: 597px;
+}
+
+.circle {
+    width: 12px;
+    height: 12px;
+    background-color: #012f42;
+    border-radius: 100%;
+    border: solid 1px #014561;
+}
+
+.active {
+    background-color: #014561;
+}
+
+.scroll-up {
+    width: 35px;
+    height: 35px;
+    right: 2rem;
+    bottom: 4rem;
+    -webkit-box-shadow: 6px 6px 33px -10px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 6px 6px 33px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 6px 6px 33px -10px rgba(0, 0, 0, 0.75);
+
+}
