@@ -32,11 +32,11 @@ const Testimonials = ({ testimonials }) => {
 
     return (
         <>
-            <div className="flex justify-center items-center gap-20 mb-5 ease-in duration-300">
-                <div className="cursor-pointer" onClick={() => handleIndex('-')}>
+            <div className="flex justify-center items-center md:gap-20 px-5 md:px-0 mb-5 ease-in duration-300">
+                <div className="cursor-pointer hidden md:block" onClick={() => handleIndex('-')}>
                     <img src="./assets/left-arrow.svg" alt="Seta para a esquerda"></img>
                 </div>
-                <div className="flex flex-col justify-center items-center max-w-screen-md">
+                <div className="flex flex-col justify-center items-center max-w-screen-md md:min-h-[auto]">
                     <div className="mb-5">
                         <img className="border border-2 rounded-full border-gold" src={testimonials[index].picture} alt="Foto de perfil do prestador de depoimento"></img>
                     </div>
@@ -44,18 +44,28 @@ const Testimonials = ({ testimonials }) => {
                     <p className="text-gold font-comorant text-xl mb-1">{testimonials[index].name}</p>
                     <p className="text-gray font-comorant">{testimonials[index].subtitle}</p>
                 </div>
-                <div className="cursor-pointer" onClick={() => handleIndex('+')}>
+                <div className="cursor-pointer hidden md:block" onClick={() => handleIndex('+')}>
                     <img src="./assets/right-arrow.svg" alt="Seta para a direita"></img>
                 </div>
             </div>
-            <div className="flex gap-3">
-                {testimonialKeys.map((key, value) => (
-                    <div className={`circle cursor-pointer${value === index ? ` active` : ""}`} key={key} onClick={() => handleCircleClick(value)}>
-                    </div>
+            <div className="flex gap-10 justify-center items-center">
+                <div className="cursor-pointer block md:hidden" onClick={() => handleIndex('-')}>
+                    <img src="./assets/left-arrow.svg" alt="Seta para a esquerda"></img>
+                </div>
+                <div className="flex gap-3">
+                    {testimonialKeys.map((key, value) => (
+                        <div className={`circle cursor-pointer${value === index ? ` active` : null}`} key={key} onClick={() => handleCircleClick(value)}>
+                        </div>
 
-                ))}
+                    ))}
 
+                </div>
+                <div className="cursor-pointer block md:hidden" onClick={() => handleIndex('+')}>
+                    <img src="./assets/right-arrow.svg" alt="Seta para a direita"></img>
+                </div>
             </div>
+
+
         </>
     )
 }

@@ -6,18 +6,18 @@ const Contact = () => {
     const [mensagem, setMensagem] = useState('');
 
     return (
-        <div className="flex gap-40 w-full justify-center items-center px-20 sm:gap-20">
-            <div>
+        <div className="flex md:flex-row flex-col-reverse md:gap-40 gap-10 w-full justify-center items-center px-5 md:px-20 sm:gap-20">
+            <div className="flex flex-col justify-center items-center md:items-start">
                 <div className="mb-5">
-                    <p className="uppercase text-light-blue text-lg">Telefones</p>
-                    <p className="text-gray">+55 (11) 3088-0757</p>
+                    <p className="uppercase text-light-blue text-lg text-center md:text-left">Telefones</p>
+                    <p className="text-gray md:text-left text-center">+55 (11) 3088-0757</p>
                 </div>
-                <div className="mb-12">
-                    <p className="uppercase text-light-blue text-lg">E-mail</p>
-                    <p className="text-gray">renee@reneetrajar.com.br</p>
+                <div className="md:mb-12 mb-7">
+                    <p className="uppercase text-light-blue text-lg md:text-left text-center">E-mail</p>
+                    <p className="text-gray md:text-left text-center">renee@reneetrajar.com.br</p>
                 </div>
                 <div>
-                    <p className="uppercase text-light-blue text-lg mb-3">Atendimento Personalizado</p>
+                    <p className="uppercase text-light-blue text-lg mb-3 md:text-left text-center">Atendimento Personalizado</p>
                     <button className="bg-white border border-light-blue text-light-blue w-full py-2 hover:border-gold hover:text-gold ease-in duration-300">Clique aqui!</button>
                 </div>
             </div>
