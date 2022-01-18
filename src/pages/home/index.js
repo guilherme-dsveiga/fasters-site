@@ -70,9 +70,9 @@ const Home = () => {
                 <Header empresaRef={empresaRef} ternosRef={ternosRef} camisariaRef={camisariaRef} depoimentosRef={depoimentosRef} contatoRef={contatoRef} />
                 <div className="md:pl-20 px-5">
                     <div className=" md:pb-10 md:pt-20 pb-5 pt-10 sm:pb-5 sm:pt-10">
-                        <h4 className="font-playfair italic text-gold md:text-4xl text-lg">Elegante é ter um </h4>
+                        <h4 className="font-playfair italic text-gold md:text-4xl text-2xl">Elegante é ter um </h4>
                         <h1 className="font-playfair uppercase text-blue md:text-8xl text-7xl text-center">Alfaiate</h1>
-                        <h4 className="font-playfair italic text-gold text-right text-4xl">pra chamar de seu.</h4>
+                        <h4 className="font-playfair italic text-gold text-right md:text-4xl text-2xl">pra chamar de seu.</h4>
                     </div>
                     <div className="pt-20">
                         <p className="font-lato font-light uppercase text-white md:text-2xl text-lg">
