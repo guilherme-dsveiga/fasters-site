@@ -54,7 +54,7 @@ const Testimonials = ({ testimonials }) => {
                 </div>
                 <div className="flex gap-3">
                     {testimonialKeys.map((key, value) => (
-                        <div className={`circle cursor-pointer${value === index ? ` active` : null}`} key={key} onClick={() => handleCircleClick(value)}>
+                        <div className={`circle cursor-pointer${value === index ? ` active` : ' '}`} key={key} onClick={() => handleCircleClick(value)}>
                         </div>
 
                     ))}
